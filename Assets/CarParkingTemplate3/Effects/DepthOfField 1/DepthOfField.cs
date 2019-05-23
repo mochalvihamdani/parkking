@@ -355,7 +355,7 @@ namespace LightingBox.Effects
 #if UNITY_5_4_OR_NEWER
                     m_ComputeBufferDrawArgs = new ComputeBuffer(1, 16, ComputeBufferType.IndirectArguments);
 #else
-                    m_ComputeBufferDrawArgs = new ComputeBuffer(1, 16, ComputeBufferType.DrawIndirect);
+                    m_ComputeBufferDrawArgs = new ComputeBuffer(1, 16, ComputeBufferType.IndirectArguments);
 #endif
                     m_ComputeBufferDrawArgs.SetData(new[] {0, 1, 0, 0});
                 }
